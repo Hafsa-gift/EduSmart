@@ -1,0 +1,196 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1F2A38;
+    color: #E0E0E0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Header Styles */
+.header {
+    background-color: #2A3B4C;
+    color: #F4B400;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.header h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 36px;
+    margin: 0;
+}
+
+/* Login Page */
+.login-container {
+    background-color: #2A3B4C;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    margin-top: 100px; /* Adjust for header */
+}
+
+.login-container h1 {
+    color: #F4B400;
+    margin-bottom: 20px;
+}
+
+.login-container input,
+.login-container select,
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #CCCCCC;
+}
+
+.login-container input:focus,
+.login-container select:focus,
+.login-container button:focus {
+    outline: none;
+    border: 1px solid #F4B400;
+}
+
+.login-container button {
+    background-color: #F4B400;
+    color: #000000;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.login-container button:hover {
+    background-color: #F29C00;
+}
+
+/* Teacher and Student Pages */
+.side-panel {
+    width: 250px;
+    background-color: #2A3B4C;
+    padding: 20px;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 80px; /* Adjust for header */
+    bottom: 0;
+    left: 0;
+}
+
+.side-panel img {
+    width: 100px;
+    height: 100px; /* Ensure the profile picture is square */
+    border-radius: 50%;
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+}
+
+.side-panel h3,
+.side-panel p {
+    margin: 10px 0;
+}
+
+.side-panel button {
+    background-color: #F4B400;
+    color: #000000;
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.side-panel button:hover {
+    background-color: #F29C00;
+}
+
+.main-content {
+    margin-left: 270px; /* Adjust to account for side panel width */
+    padding: 20px;
+    margin-top: 80px; /* Adjust for header */
+    width: calc(100% - 270px); /* Ensure main content fills remaining space */
+}
+
+.tabs {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.tabs button {
+    background-color: #2A3B4C;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.tabs button:hover {
+    background-color: #F4B400;
+    color: #000000;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+h1 {
+    font-size: 28px;
+    font-family: 'Open Sans', sans-serif;
+    color: #F4B400;
+}
+
+h2 {
+    font-size: 22px;
+    font-family: 'Open Sans', sans-serif;
+    color: #FFFFFF;
+}
+
+p, ul, li {
+    font-size: 18px;
+    color: #E0E0E0;
+}
+
+input, select, textarea, button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #CCCCCC;
+}
+
+button {
+    background-color: #F4B400;
+    color: #000000;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: #F29C00;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduSmart Student Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduSmart Student Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>EduSmart</h1>
+    </div>
+    <div class="side-panel">
+        <h3 id="username">Username</h3>
+        <p id="user-email">Email</p>
+        <button onclick="editProfile()">Edit Profile</button>
+    </div>
+    <div class="main-content">
+        <div class="tabs">
+            <button onclick="showTab('schedule')">Schedule</button>
+            <button onclick="showTab('homework')">Homework</button>
+            <button onclick="showTab('resources')">Resources</button>
+        </div>
+        <div id="schedule" class="tab-content">
+            <h1>Schedule</h1>
+            <div id="schedule-content">
+                <!-- Content will be dynamically added here -->
+            </div>
+        </div>
+        <div id="homework" class="tab-content" style="display:none;">
+            <h1>Homework</h1>
+            <div id="homework-content">
+                <!-- Content will be dynamically added here -->
+            </div>
+        </div>
+        <div id="resources" class="tab-content" style="display:none;">
+            <h1>Resources</h1>
+            <div id="resources-content">
+                <!-- Content will be dynamically added here -->
+            </div>
+        </div>
+    </div>
+    <script src="student.js"></script>
+</body>
+</html>
